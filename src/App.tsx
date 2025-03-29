@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Collections from "./pages/Collections";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
+import Designer from "./pages/Designer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/collections" element={<Collections />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/designer" element={<Designer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </TooltipProvider>
