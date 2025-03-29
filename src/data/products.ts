@@ -57,5 +57,21 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=500&auto=format&fit=crop",
     category: "Tops",
     description: "A stylish black shirt with modern aesthetic design elements. Perfect for casual outings or semi-formal events."
+  },
+  {
+    id: "8",
+    name: "Lust For Life Shirt",
+    price: 59.99,
+    image: "http://aesthetic-clothing.com/cdn/shop/products/aesthetic-clothing-lust-for-life-shirt-299.jpg?v=1635412692",
+    category: "Tops",
+    description: "Vintage-inspired graphic shirt with bold design. Made from premium cotton for all-day comfort."
+  },
+  {
+    id: "9",
+    name: "Aesthetic Teddy Red Oversized Tee",
+    price: 49.99,
+    image: "https://www.lazyhippos.in/cdn/shop/products/14_0b86c66b-5431-43dd-aa93-521a0d0f6cf2_800x.jpg",
+    category: "Tops",
+    description: "Oversized fit teddy graphic t-shirt in vibrant red. Perfect for a relaxed, street-style look."
   }
 ];

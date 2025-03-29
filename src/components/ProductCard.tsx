@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Product } from "@/types/Product";
 import { useCart } from "@/hooks/use-cart";
 import { ShoppingCart } from "lucide-react";
+import { handleImageError } from "@/utils/imageUtils";
 
 interface ProductCardProps {
   product: Product;
@@ -11,12 +12,6 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   const { addItem } = useCart();
-  
-  // Handle image loading errors
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    const target = e.target as HTMLImageElement;
-    target.src = 'https://placehold.co/400x400/e2e8f0/a1a1aa?text=No+Image';
-  };
 
   return (
     <div className="group relative overflow-hidden rounded-md bg-gray-50 transition-all hover:shadow-md">
@@ -25,7 +20,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           src={product.image}
           alt={product.name}
           className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
-          onError={handleImageError}
+          onError={(e) => handleImageError(e, product.name)}
           loading="lazy"
         />
       </div>
