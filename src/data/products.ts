@@ -49,5 +49,13 @@ export const products: Product[] = [
     image: "/img/tote.jpg",
     category: "Accessories",
     description: "Our durable canvas tote is spacious enough for all your essentials. Features an interior pocket and reinforced handles."
+  },
+  {
+    id: "7",
+    name: "Aesthetic Black Shirt",
+    price: 69.99,
+    image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=500&auto=format&fit=crop",
+    category: "Tops",
+    description: "A stylish black shirt with modern aesthetic design elements. Perfect for casual outings or semi-formal events."
   }
 ];
